@@ -1,23 +1,18 @@
 <template>
-  <form>
-  <div class="flex items-center space-x-6">
-    <div class="shrink-0">
-      <img class="h-16 w-16 object-cover rounded-full" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80" alt="Current profile photo" />
-    </div>
-    <label class="block">
-      <span class="sr-only">Choose profile photo</span>
-      <input type="file" class="block w-full text-sm text-slate-500
-        file:mr-4 file:py-2 file:px-4
-        file:rounded-full file:border-0
-        file:text-sm file:font-semibold
-        file:bg-violet-50 file:text-violet-700
-        hover:file:bg-violet-100
-      "/>
-    </label>
+  <div class="main-container">
+    Gallery Here
+    <h5>Preview</h5>
+        <Image src="https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png" alt="Image" width="250" preview />
   </div>
-  <label class="mt-6 flex items-center justify-center space-x-2 text-sm font-medium text-slate-600">
-    <input type="checkbox" class="accent-violet-500" checked/>
-    <span>Yes, send me all your stupid updates</span>
-  </label>
-</form>
 </template>
+
+<style lang="scss" scoped>
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: pink;
+    margin: 0 2rem;
+  }
+</style>
